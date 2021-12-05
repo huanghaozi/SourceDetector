@@ -20,7 +20,6 @@ jobs:
           node-version: 12
       - run: npm i
       - run: npm run build
-      - name: GitHub Push
       - uses: ad-m/github-push-action@v0.6.0
         with:
           # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
